@@ -12,7 +12,7 @@ target/
 *.iws
 *.iml
 *.ipr
-
+.idea
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -35,5 +35,8 @@ build/
 ### VS Code ###
 .vscode/
 
+
 ### Mac OS ###
 .DS_Store
+E-commerce App\.venv
+E-commerce App\.gitignore
