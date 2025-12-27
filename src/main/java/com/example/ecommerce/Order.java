@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private String orderID;
+    private int orderID;
     private List<OrderItem> orderItems;
     private double price;
 
-    public Order(String orderID) {
+    public Order(int orderID) {
         this.orderID = orderID;
         this.orderItems = new ArrayList<>();
         this.price = 0.0;
     }
 
     // Getters
-    public String getOrderID() {
+    public int getOrderID() {
         return orderID;
     }
 
@@ -40,7 +40,7 @@ public class Order {
     }
 
     // Recalculate total price
-    private void recalculatePrice() {
+    public void recalculatePrice() {
         double total = 0;
         for (OrderItem item : orderItems) {
             total += item.getItemPrice();
@@ -61,7 +61,7 @@ public class Order {
         return """
             {
                 "ordercustomerID": "%d",
-                "orderItems": %s
+                "orderitems": %s
             }
             """.formatted(ordercustomerID, itemsJson);
     }

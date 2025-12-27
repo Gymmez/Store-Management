@@ -1,18 +1,18 @@
 package com.example.ecommerce;
 
 public class OrderItem {
-    private String orderItemID;
+    private int orderItemID;
     private String itemName;
     private double itemPrice;
 
-    public OrderItem(String orderItemID, String itemName, double itemPrice) {
+    public OrderItem(int orderItemID, String itemName, double itemPrice) {
         this.orderItemID = orderItemID;
         this.itemName = itemName;
         this.itemPrice = itemPrice;
     }
 
-    // Getters
-    public String getOrderItemID() {
+
+    public int getOrderItemID() {
         return orderItemID;
     }
 
@@ -25,7 +25,7 @@ public class OrderItem {
     }
 
     // Setters
-    public void setOrderItemID(String orderItemID) {
+    public void setOrderItemID(int orderItemID) {
         this.orderItemID = orderItemID;
     }
 
